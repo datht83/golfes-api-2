@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>GOLFES API TEST</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		html, body {background-color: #f0f0f0;}
+		.card {margin: 20px 0px;}
+		.mark {padding: 15px; font-size: 18px; color: gray;}
+		.title {font-size: 16px; padding-bottom: 2px;}
+		.title:hover {color: gray; cursor: pointer;}
+	</style>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<script type="text/template" id="tmpl">
+		<div class="row card">
+			<div class="title col-md-8"><%- title %></div>
+			<div class="col-md-12">
+				<textarea class="form-control" rows="3"><%- json %></textarea>
+			</div>
+		</div>
+	</script>
+
+	<div id="result" class="container">
+		<h1>GOLFES API TEST  var.1.1.1</h1>
+	</div>
+	<script type="text/javascript" src="config.js"></script>
+	<script type="text/javascript" src="src/init.js"></script>
+	<script type="text/javascript" src="src/user.js"></script>
+	<script type="text/javascript" src="src/plan.js"></script>
+	<script type="text/javascript" src="src/planvote.js"></script>
+	<script type="text/javascript" src="src/planner.js"></script>
+	<script type="text/javascript" src="src/ticket.js"></script>
+	<script type="text/javascript" src="src/mypage.js"></script>
+        <script type="text/javascript" src="src/profile.js"></script>
+	<script type="text/javascript" src="src/end.js"></script>
+</body>
+</html>
