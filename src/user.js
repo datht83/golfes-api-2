@@ -80,4 +80,13 @@ xhr.user = xhr.init
 		username: 'shirakawa',
 		content: 'これはtestお問い合わせメールです'
 	});
+})
+.then(function(res) {
+	App.log(url, res);
+	App.setToken(res.data.access_token);
+
+	url = 'user/user_data';
+	return get(url, {
+		
+	});
 });
